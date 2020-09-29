@@ -1,0 +1,663 @@
+/* CSS RESET SECTION
+------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav,
+section, canvas, main, video { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+html, body {width: 100%;
+    height: 100%;}
+html{box-sizing: border-box;}
+*, *:before, *:after{box-sizing: inherit;}
+
+
+/* -----------------------------------------
+General SECTION
+-------------------------------------------*/
+.wrapper{
+    align-content: center;
+    align-items: center;
+
+
+
+}
+
+
+.container{
+    width: 80vw;
+    max-width: 1200px;
+    margin: 0 auto;
+   /*  height: auto;*/
+}
+
+
+body {
+    font-family:Arial;
+    background-color:#E6E6E6
+}
+
+p{
+    word-spacing: 1.4px;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+
+}
+
+.inner{
+   /* width:80%;*/
+  /*  margin: 0 auto;*/
+}
+
+.flexCont{display: flex;}
+
+.justifyBetween{
+    justify-content: space-between;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+
+/*.alignCenter{
+    align-content: center;
+    align-items: center;
+    alignment: center;
+
+}*/
+
+
+.btn{
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid black;
+    padding: 10px;
+    text-decoration: none;
+    background-color:#E9D758;
+    color: #172121;
+    transition-duration: 1s;
+}
+
+.btn:hover{
+    color: #E6E6E6;
+    background-color: #297373;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size:40px;
+    color: #172121;
+    padding:50px 0;
+
+}
+
+
+
+h2{
+    font-weight: bold;
+    font-size: 25px;
+    color:#172121;
+}
+
+#h2Logo{
+    color:#2f91d2;
+}
+
+.currentPageLink{
+    color: #39393A;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#E9D758;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #E9D758 ;
+    position: relative;
+    top: -12px;
+}
+
+a{
+    color: #E6E6E6;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+
+a:hover{
+    border-bottom: 2px solid #E6E6E6;
+    transition-duration: .8s;
+
+}
+
+
+a:active{
+    color: red;
+    text-decoration: underline;
+}
+
+.alignItemCenter{
+    align-items: center;
+}
+
+/* -----------------------------------------
+Header SECTION
+-------------------------------------------*/
+header{
+    background-color:#39393A ;
+    border-bottom: black;
+    position: fixed;
+    width: 100%;
+    /*max-width: 1200px;*/
+}
+
+Nav a{
+    display: block;
+    text-transform: uppercase ;
+    margin: 10px 10px;
+}
+
+.topNav{
+    margin-top:8px;
+    /*padding-right: 2%;*/
+    box-sizing: border-box;
+}
+
+.banner{
+    width: 100%;
+    height: 449px;
+    background-color: white;
+    text-align: center;
+    padding-top: 50px;}
+
+.banner h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo h2{
+    color:#E6E6E6;
+}
+
+/*.logo{
+    padding-left: 10%;
+}*/
+
+#menuBtn{display: none}
+
+.aboutSection, .serviceSection, .gallerySection, .locationSection{
+    padding: 0 10% 20px 10%;
+}
+
+/* -----------------------------------------
+           Footer SECTION
+-------------------------------------------*/
+
+footer{
+    background-color:#39393A;
+    padding: 50px 0;
+  /*  max-width: 1200px;*/
+}
+
+
+
+footer p{
+    text-transform: capitalize;
+    color: #E6E6E6;
+}
+
+/* -----------------------------------------
+           About  Section
+-------------------------------------------*/
+.aboutUsPageGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+
+}
+
+.aboutUsPageGrid p{
+    text-align: justify;
+
+    margin-bottom: 18px;
+}
+
+.aboutSectionGrid{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(2,1fr);
+    border-bottom: 40px;
+    margin-bottom: 50px;
+
+}
+
+.aboutSectionPar{
+    padding-bottom: 12px;
+    line-height: 21px ;
+
+
+}
+
+.clearFix:after{
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+.aboutSection{
+   background-color: #2f91d2;
+}
+
+/* -----------------------------------------
+            Service  Section
+-------------------------------------------*/
+.servicePageServicesGridCont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+    margin: 15px 0 35px;
+}
+
+.servicePageGridCont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+    margin-bottom: 70px;
+}
+
+.service-item{
+    border-style: solid;
+    padding-bottom: 20px;
+}
+
+.ServiceBorder{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+.ServicePar {
+    padding: 20px;
+
+    line-height: 21px ;
+}
+
+.serviceItemRowOne{
+    padding-bottom: 31px;
+    padding-top: 12px;
+}
+.serviceSection{
+    background-color: white;
+}
+/* -----------------------------------------
+           Gallery  Section
+-------------------------------------------*/
+.GalleryItem{
+    align-content:center;
+}
+
+
+.GallerySectionGridCont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   /* grid-template-rows: 326px 326px;*/
+    grid-template-rows: 1fr 1fr;
+    grid-gap:10px;
+}
+
+.gallerySection{
+    background-color: #297373;
+}
+
+.GalleryItemRowTitle{
+    padding: 10px 0;
+}
+
+/* -----------------------------------------
+           Location  Section
+-------------------------------------------*/
+.address {
+    word-spacing: 1.4px;
+    letter-spacing: .8px;
+    line-height: 36px;
+}
+
+.locationSectionGrid{
+    display: grid;
+    grid-template-columns:30% 70%;
+}
+
+.locationSection{
+    background-color:#E6E6E6;
+}
+
+/* -----------------------------------------
+            Contact Us Section
+-------------------------------------------*/
+
+.contactSection{
+    background-color:white;
+    width: 100%;
+
+}
+
+.contactUsForm form{
+
+    max-width: 1000px;
+    padding: 40px 0;
+    margin:40px auto;
+
+
+}
+
+.contactUsFormTextColor{
+    color: #E6E6E6;
+}
+
+.form-row{
+    margin: 20px 0;
+}
+
+.non-option input{
+    height: 25px;
+   /* width: 413px;*/
+}
+
+/*.form-label{
+    float: left;
+    width: 35%;
+    text-transform:capitalize ;
+}*/
+
+input, textarea{
+    background-color:#E6E6E6 ;
+    border: none;
+    border-bottom: #172121 ;
+    width: 100%;
+}
+
+
+
+.contactUsForm p{
+    margin: 10px 0;
+    color: #E6E6E6;
+}
+
+
+
+
+.contactUsForm{
+    margin-top:-50px;
+    background-color: #39393A;
+
+}
+
+button{
+    box-sizing: border-box;
+    background: #E6E6E6;
+    padding: 5px 5px;
+    margin: 0 9px;
+    color:#39393A ;
+    font-weight: bold;
+    min-width: 75px;
+
+}
+
+.FormBtn{
+    text-align: center;
+
+}
+
+.form-row::after{
+    content: ".";
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    display: block;
+}
+
+
+.form-input{
+ /*   float:right;
+    width: 56%;*/
+    width: 100%;
+}
+
+textarea{
+    height: 200px;
+   /* width: 678px;*/
+    width: 100%;
+
+
+}
+
+fieldset{
+    margin:0 25%;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------
+Mobile Web Design Section
+----------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 480px) {
+
+/* -----------------------------------------
+    Small screen----Header Section
+-------------------------------------------- */
+.banner{display: none;}
+#menuBtn{display:inline-block; margin-left: -11%;; width: 60px; height: 60px; cursor: pointer;}
+
+
+.p-background{
+    background-image: url("../imgs/Banner-1004.png");
+    background-attachment: fixed;
+    background-repeat: round;
+}
+
+
+/* -----------------------------------------
+    Small screen----GALLERY Section
+-------------------------------------------- */
+.GallerySectionGridCont{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+
+    grid-gap:10px;
+}
+
+
+.GalleryItemRowTwoTitle{
+    padding-top: 10px;
+    padding-bottom: 20px ;
+}
+
+/* -----------------------------------------
+           Small screen----LOCATION Section
+ -------------------------------------------- */
+.locationSectionGrid{
+    display: flex;
+    flex-direction: column;
+}
+
+
+    /* -----------------------------------------
+      Small screen---- CONTACT US Section
+-------------------------------------------- */
+
+
+textarea{
+   min-width: 125px;
+    }
+
+button[type="reset"] {
+    padding: 4px 11px;
+}
+
+
+.FormBtn button{
+    margin:6px auto;
+}
+
+
+
+}/*-------------------small screen------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        Median screen  481->768px
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+@media only screen and (min-width: 481px) and (max-width:768px)  {
+
+/* -----------------------------------------
+       Header Section
+ -------------------------------------- */
+
+#menuBtn{display:inline-block; margin-left: 25%;; width: 60px; height: 60px; cursor: pointer;}
+
+
+
+
+/* -----------------------------------------
+    Median screen---- Gallery Section
+ -------------------------------------------- */
+.GallerySectionGridCont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap:10px;
+}
+
+
+/* -----------------------------------------
+     Median screen----    CONTACT US Section
+-------------------------------------------- */
+.FormBtn button{
+    box-sizing: border-box;
+    margin:6px auto;
+}
+
+}   /*----------Median screen-----------*/
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Small & Median screen  (max-width 768px)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+
+/* -----------------------------------------
+       Header Section
+ -------------------------------------- */
+
+h1{padding-top: 116px;}
+.topNav ul {display: block;}
+.topNav ul a {
+    display: block;
+    width: 100%;
+    padding: 20px 5px 20px 20px;
+    text-align: center;
+    background-color: #2f91d2;
+}
+.topNav{
+    padding-right:18px;
+}
+
+
+#topNavContainer{
+    width: 100%;
+    display: none;
+
+}
+
+
+.logo{
+    padding-left: 5%;
+    align-items:flex-start;
+
+}
+.logo h2{
+    padding-top: 20px;
+    padding-right: 100px;
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+    /* -----------------------------------------
+       Our Service Section
+     -------------------------------------------- */
+    .servicePageGridCont{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto auto auto;
+        grid-gap:10px;
+        margin-bottom: 70px;
+    }
+
+
+
+
+    /* -----------------------------------------
+                LOCATION Section
+        -------------------------------------------- */
+.locationSectionGrid{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* -----------------------------------------
+          About Section
+-------------------------------------------- */
+
+.aboutSectionGrid{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}   /*----------Small & Median screen-----------*/
+
+
+
+
+
+
+
+
